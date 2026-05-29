@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Servicios — Tek-Recolect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header class="site-header"><div class="container nav-wrap">
+<nav class="nav-links">
+  <a href="nosotros.html" >Nosotros</a>
+  <a href="servicios.html" style="color:#1f6feb;font-weight:600">Servicios</a>
+  <a href="carrito.html" >Carrito<span class="cart-count" style="display:none">0</span></a>
+  <a href="index.html" >Inicio</a>
+  <a href="login.html" class="btn-login">Iniciar sesión</a>
+</nav>
+<a href="index.html"><img src="imagenes/logo.png" alt="Tek-Recolect" class="logo"></a>
+</div></header>
+
+<section class="section bg-mist"><div class="container"><div class="card-row" data-reveal>
+  <img src="imagenes/capacitacion.jpg" alt="Capacitación">
+  <div><h1 style="font-size:36px">Capacitación y Seguridad</h1><p>Contamos con personal capacitado para operar tractores recolectores de basura en playas.</p>
+  <a href="servicios-personal.html" class="btn btn-yellow" style="margin-top:24px">Solicitar Servicio</a></div>
+</div></div></section>
+
+<section class="section bg-mist" style="padding-top:0"><div class="container" style="max-width:840px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+  <a href="servicios-tecnicos.html" class="product" data-reveal style="text-align:left">
+    <img src="imagenes/tecnicos.jpg" alt="Técnicos">
+    <div class="body" style="text-align:left"><h3>Técnicos de Servicio</h3><p style="margin-top:8px;color:#64748b">Mantenimiento y reparación profesional.</p></div>
+  </a>
+  <a href="servicios-paquetes.html" class="product" data-reveal style="text-align:left">
+    <img src="imagenes/paquetes.jpg" alt="Paquetes">
+    <div class="body" style="text-align:left"><h3>Paquetes</h3><p style="margin-top:8px;color:#64748b">Diferentes paquetes para público distinto.</p></div>
+  </a>
+</div></div></section>
+
+<section class="section bg-white"><div class="container">
+  <h2 class="title-center" style="font-size:30px">Solicita tu servicio</h2>
+  <form id="srvForm" class="form-card" style="margin-top:32px" onsubmit="return tekSrv(event)">
+    <input type="text" id="f-nombre" placeholder="Nombre" maxlength="100" required>
+    <input type="email" id="f-correo" placeholder="Correo" maxlength="150" required>
+    <select id="f-srv" required onchange="tekCot()">
+      <option value="">Selecciona servicio</option>
+      <option value="basica" data-p="5000">Capacitación básica — $5,000 MXN</option>
+      <option value="avanzada" data-p="10000">Capacitación avanzada — $10,000 MXN</option>
+      <option value="mantenimiento" data-p="15000">Mantenimiento técnico — $15,000 MXN</option>
+    </select>
+    <input type="date" id="f-fecha" required>
+    <p style="text-align:center;margin-top:16px;font-weight:600;color:#0f172a">Cotización: <span id="f-cot">$0 MXN</span></p>
+    <div style="text-align:center;margin-top:14px"><button type="submit" class="btn btn-blue">Solicitar ahora</button></div>
+  </form>
+</div></section>
+<script>
+function tekCot(){var s=document.getElementById('f-srv');var o=s.options[s.selectedIndex];var p=parseInt(o.getAttribute('data-p')||'0');document.getElementById('f-cot').textContent=tekFormatMXN(p);}
+function tekSrv(e){e.preventDefault();var n=document.getElementById('f-nombre').value,s=document.getElementById('f-srv').value;alert('¡Solicitud enviada, '+n+'!\nServicio: '+s+'\nCotización: '+document.getElementById('f-cot').textContent);e.target.reset();document.getElementById('f-cot').textContent='$0 MXN';return false;}
+</script>
+
+<footer class="site-footer"><div class="container footer-grid">
+<p style="font-size:14px">© 2026 Tek-Recolect</p>
+<div class="contact"><p style="font-weight:600">Contacto:</p><p>📞 Tel: 55 1234 5678</p><p>✉️ Email: contacto@tekrecolect.com</p><p>📍 Veracruz, México</p></div>
+<div class="socials">
+  <a href="https://www.instagram.com/tek_recolect?igsh=MWU4dDQ0aXN2aWx2Zg==" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
+  <a href="https://www.tiktok.com/@tekrecolect?_r=1&_t=ZS-94YfbeSHLBB" target="_blank" rel="noopener" class="social-icon social-tt" aria-label="TikTok">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.81a8.16 8.16 0 0 0 4.77 1.52V6.89a4.85 4.85 0 0 1-1.84-.2z"/></svg>
+  </a>
+</div>
+</div></footer>
+<script src="js/app.js"></script>
+</body></html>

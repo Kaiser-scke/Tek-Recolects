@@ -1,0 +1,18 @@
+TEK-RECOLECT — Sitio web estático
+====================================
+
+Esta carpeta contiene la página web 100% en HTML/CSS/JS.
+Sólo copia toda la carpeta a tu USB y abre `index.html` con cualquier navegador.
+
+Estructura:
+  index.html               Inicio
+  nosotros.html            Acerca de
+  servicios.html           Servicios + formulario
+  servicios-paquetes.html  Paquetes (portada + grid)
+  servicios-tecnicos.html  Técnicos (portada + equipo)
+  servicios-personal.html  Solicitar capacitación
+  carrito.html             Carrito de compras (localStorage)
+  login.html               Inicio de sesión
+  css/styles.css           Estilos
+  js/app.js                Loader + carrito + animaciones scroll
+  imagenes/                Todas las imágenes

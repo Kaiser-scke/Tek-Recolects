@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tek-Recolect — Equipos para cuidar las playas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header class="site-header"><div class="container nav-wrap">
+<nav class="nav-links">
+  <a href="nosotros.html" >Nosotros</a>
+  <a href="servicios.html" >Servicios</a>
+  <a href="carrito.html" >Carrito<span class="cart-count" style="display:none">0</span></a>
+  <a href="index.html" style="color:#1f6feb;font-weight:600">Inicio</a>
+  <a href="login.html" class="btn-login">Iniciar sesión</a>
+</nav>
+<a href="index.html"><img src="imagenes/logo.png" alt="Tek-Recolect" class="logo"></a>
+</div></header>
+
+<section class="hero">
+  <img src="imagenes/hero-beach.jpg" alt="Limpieza de playas">
+  <div class="overlay1"></div><div class="overlay2"></div>
+  <div class="orb1"></div><div class="orb2"></div>
+  <div class="hero-content"><div>
+    <h1><span class="grad">Tek-Recolect</span><br><span style="color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.4)">Diseñados para</span><br><span style="color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.4)">cuidar las playas</span></h1>
+    <div class="underline"></div>
+  </div></div>
+</section>
+
+<section class="section bg-mist"><div class="container"><div class="card-row" data-reveal>
+  <img src="imagenes/soluciones.jpg" alt="Soluciones" loading="lazy">
+  <div><h2>Soluciones para playas limpias</h2><p>Mantener las playas limpias mediante el uso de tractores recolectores de basura. Nuestro objetivo es reducir la cantidad de basura en las playas con equipos rentables y funcionales.</p></div>
+</div></div></section>
+
+<section class="section bg-steel"><div class="container"><div class="card-row no-bg" data-reveal>
+  <div><h2>Logística Segura</h2><p>Operamos bajo términos Incoterm CIF, asegurando tu inversión desde el puerto de origen hasta la Aduana de Veracruz.</p></div>
+  <img src="imagenes/logistica.jpg" alt="Logística" loading="lazy">
+</div></div></section>
+
+<section class="section bg-mist"><div class="container"><div class="card-row" data-reveal>
+  <img src="imagenes/mision.jpg" alt="Misión" loading="lazy">
+  <div><h2>Nuestra Misión</h2><p>Transformar el cuidado de las playas mexicanas mediante la importación de tecnología robótica y maquinaria especializada de alta eficiencia. Nos comprometemos a ofrecer soluciones sustentables que protejan el ecosistema marino y fortalezcan el turismo nacional.</p></div>
+</div></div></section>
+
+<section class="section bg-sand"><div class="container">
+  <h2 class="title-center">Elige tus equipos</h2>
+  <p class="lead-center">Toca <strong>Agregar</strong> para armar tu pedido.</p>
+  <div class="grid-3" style="margin-top:48px"><div class="product" data-reveal>
+    <img src="imagenes/p1-harvester.jpg" alt="Pro-Beach Harvester 2800" loading="lazy">
+    <div class="body"><h3>Pro-Beach Harvester 2800</h3><p class="price">$1,135,231 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p1',name:'Pro-Beach Harvester 2800',price:1135231,image:'imagenes/p1-harvester.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p2-shark.jpg" alt="Front-Loader Shark" loading="lazy">
+    <div class="body"><h3>Front-Loader Shark</h3><p class="price">$710,867 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p2',name:'Front-Loader Shark',price:710867,image:'imagenes/p2-shark.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p3-track.jpg" alt="Track-Master Elite" loading="lazy">
+    <div class="body"><h3>Track-Master Elite</h3><p class="price">$1,977,903 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p3',name:'Track-Master Elite',price:1977903,image:'imagenes/p3-track.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p4-resort.jpg" alt="Resort-Cleaner Turbo" loading="lazy">
+    <div class="body"><h3>Resort-Cleaner Turbo</h3><p class="price">$516,602 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p4',name:'Resort-Cleaner Turbo',price:516602,image:'imagenes/p4-resort.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p5-barracuda.jpg" alt="Barracuda Track-Point" loading="lazy">
+    <div class="body"><h3>Barracuda Track-Point</h3><p class="price">$347,278 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p5',name:'Barracuda Track-Point',price:347278,image:'imagenes/p5-barracuda.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p6-cc500.jpg" alt="CC-500" loading="lazy">
+    <div class="body"><h3>CC-500</h3><p class="price">$240,728 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p6',name:'CC-500',price:240728,image:'imagenes/p6-cc500.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p7-oasis.jpg" alt="Oasis-Ride 360" loading="lazy">
+    <div class="body"><h3>Oasis-Ride 360</h3><p class="price">$460,827 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p7',name:'Oasis-Ride 360',price:460827,image:'imagenes/p7-oasis.jpg'})">Agregar</button>
+    </div></div><div class="product" data-reveal>
+    <img src="imagenes/p8-cyber.jpg" alt="Cyber-Beach Bot" loading="lazy">
+    <div class="body"><h3>Cyber-Beach Bot</h3><p class="price">$2,255,458 MXN</p>
+    <button class="btn btn-green" style="margin-top:14px" onclick="tekAddToCart({id:'p8',name:'Cyber-Beach Bot',price:2255458,image:'imagenes/p8-cyber.jpg'})">Agregar</button>
+    </div></div></div>
+</div></section>
+
+<section class="section bg-white"><div class="container">
+  <h2 class="title-center">Opiniones de nuestros clientes</h2>
+  <p class="lead-center">Empresas y clientes satisfechos con nuestros equipos.</p>
+  <div class="grid-3" style="margin-top:48px">
+    <div style="background:#eef2f7;padding:32px;border-radius:16px;text-align:center" data-reveal><div style="width:80px;height:80px;background:#fff;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 2px 8px rgba(0,0,0,.1)">👨‍💼</div><h3 style="margin-top:16px;font-size:20px">Carlos Martínez</h3><p style="color:#fde047;margin-top:8px">★★★★★</p><p style="margin-top:14px;color:#64748b;font-size:14px">"Excelente servicio y maquinaria de alta calidad."</p></div>
+    <div style="background:#eef2f7;padding:32px;border-radius:16px;text-align:center" data-reveal><div style="width:80px;height:80px;background:#fff;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 2px 8px rgba(0,0,0,.1)">👩</div><h3 style="margin-top:16px;font-size:20px">Ana López</h3><p style="color:#fde047;margin-top:8px">★★★★★</p><p style="margin-top:14px;color:#64748b;font-size:14px">"Muy recomendables. La atención fue muy buena."</p></div>
+    <div style="background:#eef2f7;padding:32px;border-radius:16px;text-align:center" data-reveal><div style="width:80px;height:80px;background:#fff;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 2px 8px rgba(0,0,0,.1)">🧔</div><h3 style="margin-top:16px;font-size:20px">Roberto Hernández</h3><p style="color:#fde047;margin-top:8px">★★★★★</p><p style="margin-top:14px;color:#64748b;font-size:14px">"Tecnología innovadora y personal profesional."</p></div>
+  </div>
+  <div style="text-align:center;margin-top:48px"><a href="servicios.html" class="btn btn-blue">Ver servicios</a></div>
+</div></section>
+
+<footer class="site-footer"><div class="container footer-grid">
+<p style="font-size:14px">© 2026 Tek-Recolect</p>
+<div class="contact"><p style="font-weight:600">Contacto:</p><p>📞 Tel: 55 1234 5678</p><p>✉️ Email: contacto@tekrecolect.com</p><p>📍 Veracruz, México</p></div>
+<div class="socials">
+  <a href="https://www.instagram.com/tek_recolect?igsh=MWU4dDQ0aXN2aWx2Zg==" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
+  <a href="https://www.tiktok.com/@tekrecolect?_r=1&_t=ZS-94YfbeSHLBB" target="_blank" rel="noopener" class="social-icon social-tt" aria-label="TikTok">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.81a8.16 8.16 0 0 0 4.77 1.52V6.89a4.85 4.85 0 0 1-1.84-.2z"/></svg>
+  </a>
+</div>
+</div></footer>
+<script src="js/app.js"></script>
+</body></html>
